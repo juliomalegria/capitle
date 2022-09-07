@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Worldle } from "../Worldle";
+import { Capitel } from "../Capitel";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -18,7 +18,7 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
           6回以内の回答で
-          <Worldle />
+          <Capitel />
           に正解しましょう。
         </div>
         <div>正確な国名・地域名で回答してください。</div>
@@ -89,33 +89,19 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
         毎日新しい
-        <Worldle />
+        <Capitel />
         を楽しむことができます！
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">質問や提案がありますか？</div>
-        <div>
-          <a
-            className="underline"
-            href="https://worldle.notion.site/Worldle-b84ab0f002e34866980a4d47cf9291b7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Worldle FAQ
-          </a>
-          をご覧ください。
-        </div>
-      </div>
-      <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle />
+        <Capitel />
         は、
         <a
           className="underline"
-          href="https://www.powerlanguage.co.uk/wordle/"
+          href="https://worldle.teuteuf.fr/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Wordle
+          Worldle
         </a>
         （
         <a
@@ -124,7 +110,7 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Josh Wardle (@powerlanguish)
+          @teuteuf
         </a>
         作）から<span className="font-bold">多大な</span>
         影響を受けて制作しました。
@@ -134,16 +120,16 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
           作者：
           <a
             className="underline"
-            href="https://twitter.com/teuteuf"
+            href="https://juliomalegria.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @teuteuf
+            Julio M. Alegria
           </a>{" "}
           - (
           <a
             className="underline"
-            href="https://github.com/teuteuf/worldle/"
+            href="https://github.com/juliomalegria/capitel/"
             target="_blank"
             rel="noopener noreferrer"
           >

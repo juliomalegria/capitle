@@ -20,7 +20,6 @@ import { Twemoji } from "@teuteuf/react-emoji-render";
 import { countries } from "../domain/countries.position";
 import { useNewsNotifications } from "../hooks/useNewsNotifications";
 
-const ENABLE_TWITCH_LINK = false;
 const MAX_TRY_COUNT = 6;
 
 interface GameProps {
@@ -230,38 +229,6 @@ export function Game({ settingsData, updateSettings }: GameProps) {
               >
                 <Twemoji
                   text={t("showOnWikipedia")}
-                  options={{ className: "inline-block" }}
-                />
-              </a>
-            </div>
-            {ENABLE_TWITCH_LINK && (
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a
-                  className="underline text-center block mt-4 whitespace-nowrap"
-                  href="https://www.twitch.tv/t3uteuf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twemoji
-                    text="More? Play on Twitch! 👾"
-                    options={{ className: "inline-block" }}
-                  />
-                </a>
-              </div>
-            )}
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                className="underline text-center block mt-4 whitespace-nowrap"
-                href="https://emovi.teuteuf.fr/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twemoji
-                  text={
-                    dayString === "2022-07-17"
-                      ? "Let's celebrate #WorldEmojiDay! Play Emovi! 🎥"
-                      : "Try my new game, play Emovi! 🎥"
-                  }
                   options={{ className: "inline-block" }}
                 />
               </a>

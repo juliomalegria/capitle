@@ -12,7 +12,7 @@ import { InfosPl } from "./components/panels/InfosPl";
 import { InfosDe } from "./components/panels/InfosDe";
 import { Settings } from "./components/panels/Settings";
 import { useSettings } from "./hooks/useSettings";
-import { Worldle } from "./components/Worldle";
+import { Capitel } from "./components/Capitel";
 import { Stats } from "./components/panels/Stats";
 import { Twemoji } from "@teuteuf/react-emoji-render";
 import { getDayString, useTodays } from "./hooks/useTodays";
@@ -108,7 +108,7 @@ export default function App() {
               <Twemoji text="❓" />
             </button>
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
-              Wor<span className="text-green-600">l</span>dle
+              Capit<span className="text-green-600">l</span>e
             </h1>
             <button
               className="ml-3 text-xl"
@@ -131,7 +131,7 @@ export default function App() {
               text="❤️"
               className="flex items-center justify-center mr-1"
             />{" "}
-            <Worldle />? -
+            <Capitel />? -
             {country && supportLink[country.code] != null ? (
               <a
                 className="underline pl-1"

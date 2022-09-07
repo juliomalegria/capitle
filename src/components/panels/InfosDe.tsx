@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Worldle } from "../Worldle";
+import { Capitel } from "../Capitel";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -17,7 +17,7 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
     <Panel title="Wie wird gespielt?" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
-          Errate das <Worldle /> in 6 Versuchen.
+          Errate das <Capitel /> in 6 Versuchen.
         </div>
         <div>Jeder Versuch muss ein gültiges Land, Territorium, ... sein</div>
         <div>
@@ -86,32 +86,17 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Jeden Tag wird ein neues <Worldle /> verfügbar sein!
+        Jeden Tag wird ein neues <Capitel /> verfügbar sein!
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">Irgendwelche Fragen oder Vorschläge?</div>
-        <div>
-          Schau ins{" "}
-          <a
-            className="underline"
-            href="https://worldle.notion.site/Worldle-b84ab0f002e34866980a4d47cf9291b7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Worldle FAQ
-          </a>
-          !
-        </div>
-      </div>
-      <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> wurde <span className="font-bold">stark</span> von{" "}
+        <Capitel /> wurde <span className="font-bold">stark</span> von{" "}
         <a
           className="underline"
-          href="https://www.powerlanguage.co.uk/wordle/"
+          href="https://worldle.teuteuf.fr/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Wordle
+          Worldle
         </a>{" "}
         von{" "}
         <a
@@ -120,7 +105,7 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Josh Wardle (@powerlanguish)
+          @teuteuf
         </a>{" "}
         inspiriert.
       </div>
@@ -129,16 +114,16 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
           Erstellt von{" "}
           <a
             className="underline"
-            href="https://twitter.com/teuteuf"
+            href="https://juliomalegria.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @teuteuf
+            Julio M. Alegria
           </a>{" "}
           - (
           <a
             className="underline"
-            href="https://github.com/teuteuf/worldle/"
+            href="https://github.com/juliomalegria/capitel/"
             target="_blank"
             rel="noopener noreferrer"
           >

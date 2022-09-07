@@ -37,9 +37,9 @@ export const translations = {
         guessDistribution: "Guess distribution:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "App Install:",
-        description: "Add Worldle to Home Screen to play it easily!",
+        description: "Add Capitel to Home Screen to play it easily!",
         instructionTitle: "Instructions:",
         instructionActionOk: "OK",
         instructionActionCancel: "Cancel",
@@ -103,10 +103,10 @@ export const translations = {
         guessDistribution: "Répartitions des victoires:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "Installer l'app:",
         description:
-          "Ajouter Worldle sur l'écran d'accueil pour le retrouver plus facilement !",
+          "Ajouter Capitel sur l'écran d'accueil pour le retrouver plus facilement !",
         instructionTitle: "Instructions :",
         instructionActionOk: "OK",
         instructionActionCancel: "Annuler",
@@ -228,10 +228,10 @@ export const translations = {
         guessDistribution: "Találatok eloszlása:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "App Letöltése:",
         description:
-          "Add hozzá a Worldle a Kezdőképernyőhöz, hogy egyszerűbben játszhass!",
+          "Add hozzá a Capitel a Kezdőképernyőhöz, hogy egyszerűbben játszhass!",
         instructionTitle: "In",
         instructionActionOk: "OK",
         instructionActionCancel: "Mégse",
@@ -284,10 +284,10 @@ export const translations = {
         guessDistribution: "Kansverspreiding:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "Appinstallatie:",
         description:
-          "Voeg Worldle toe aan je beginscherm om het makkelijk te spelen!",
+          "Voeg Capitel toe aan je beginscherm om het makkelijk te spelen!",
         instructionTitle: "Instructies:",
         instructionActionOk: "OK",
         instructionActionCancel: "Annuleer",
@@ -342,9 +342,9 @@ export const translations = {
         guessDistribution: "Podział odgadnięć:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "Instalacja:",
-        description: "Dodaj Worldle do ekranu głównego żeby grać łatwiej!",
+        description: "Dodaj Capitel do ekranu głównego żeby grać łatwiej!",
         instructionTitle: "Instrukcja:",
         instructionActionOk: "OK",
         instructionActionCancel: "Anuluj",
@@ -407,10 +407,10 @@ export const translations = {
         guessDistribution: "Distribuição de palpites:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "Instalar App:",
         description:
-          "Adicione Worldle a sua página inicial para jogar mais facilmente!",
+          "Adicione Capitel a sua página inicial para jogar mais facilmente!",
         instructionTitle: "Instruções:",
         instructionActionOk: "OK",
         instructionActionCancel: "Cancelar",
@@ -472,10 +472,10 @@ export const translations = {
         guessDistribution: "Verteilung der Versuche:",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "App Installieren:",
         description:
-          "Worldle zum Startbildschirm hinzufügen um einfacher zu spielen!",
+          "Capitel zum Startbildschirm hinzufügen um einfacher zu spielen!",
         instructionTitle: "Anleitung:",
         instructionActionOk: "OK",
         instructionActionCancel: "Abbrechen",
@@ -537,9 +537,9 @@ export const translations = {
         guessDistribution: "的中までの回答数",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "アプリをインストール",
-        description: "ホーム画面にWorldleを追加してプレイしやすくしましょう！",
+        description: "ホーム画面にCapitelを追加してプレイしやすくしましょう！",
         instructionTitle: "やり方",
         instructionActionOk: "OK",
         instructionActionCancel: "キャンセル",
@@ -603,10 +603,10 @@ export const translations = {
         guessDistribution: "Classificazione di e vittorie",
       },
       install: {
-        title: "Worldle",
+        title: "Capitel",
         descritpionTitle: "Installà l’appiecazione :",
         description:
-          "Aghjunghje Worldle à u screnu d’accolta per ghjucà più prestu !",
+          "Aghjunghje Capitel à u screnu d’accolta per ghjucà più prestu !",
         instructionTitle: "Istruzzioni :",
         instructionActionOk: "Vai",
         instructionActionCancel: "Abbandunà",

@@ -1,9 +1,9 @@
 import React from "react";
 
-export function Worldle() {
+export function Capitel() {
   return (
     <span className="font-bold">
-      WOR<span className="text-green-600">L</span>DLE
+      CAPIT<span className="text-green-600">L</span>E
     </span>
   );
 }

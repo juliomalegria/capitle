@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Worldle } from "../Worldle";
+import { Capitel } from "../Capitel";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -18,7 +18,7 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
           {" "}
-          Induvinate u <Worldle /> in 6 colpi.
+          Induvinate u <Capitel /> in 6 colpi.
         </div>
         <div>
           Ogni colpu deve esse u nome accettevule d’un paese o d’un territoriu.
@@ -90,33 +90,18 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Un novu <Worldle /> hè dispunibule ogni ghjornu !
+        Un novu <Capitel /> hè dispunibule ogni ghjornu !
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">Una dumanda o una sugestione ?</div>
-        <div>
-          Visitate a{" "}
-          <a
-            className="underline"
-            href="https://worldle.notion.site/Worldle-b84ab0f002e34866980a4d47cf9291b7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            FAQ di Worldle
-          </a>{" "}
-          !
-        </div>
-      </div>
-      <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> hè statu inspiratu{" "}
+        <Capitel /> hè statu inspiratu{" "}
         <span className="font-bold">forte forte</span> da{" "}
         <a
           className="underline"
-          href="https://www.powerlanguage.co.uk/wordle/"
+          href="https://worldle.teuteuf.fr/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Wordle
+          Worldle
         </a>{" "}
         creatu da{" "}
         <a
@@ -125,7 +110,7 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Josh Wardle (@powerlanguish)
+          @teuteuf
         </a>
         .
       </div>
@@ -134,16 +119,16 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
           Sviluppatu da{" "}
           <a
             className="underline"
-            href="https://twitter.com/teuteuf"
+            href="https://juliomalegria.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @teuteuf
+            Julio M. Alegria
           </a>{" "}
           - (
           <a
             className="underline"
-            href="https://github.com/teuteuf/worldle/"
+            href="https://github.com/juliomalegria/capitel/"
             target="_blank"
             rel="noopener noreferrer"
           >
