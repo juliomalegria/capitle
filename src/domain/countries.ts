@@ -1,9 +1,7 @@
 // Source:
 // Countries with long/lat => https://developers.google.com/public-data/docs/canonical/countries_csv
-// Countries images => https://github.com/djaiss/mapsicon
-// Country area => https://github.com/samayo/country-json/blob/master/src/country-by-surface-area.json
+// Countries with capitals => https://https://github.com/icyrockcom/country-capitals/blob/master/data/country-list.csv
 
-import { areas } from "./countries.area";
 import { countries } from "./countries.position";
 import { corsicanCountryNames } from "./countries.name.co";
 import { frenchCountryNames } from "./countries.name.fr";
@@ -11,24 +9,17 @@ import { hungarianCountryNames } from "./countries.name.hu";
 import { dutchCountryNames } from "./countries.name.nl";
 import { polishCountryNames } from "./countries.name.pl";
 import { germanCountryNames } from "./countries.name.de";
-import { countryCodesWithImage } from "./countries.image";
 import { japaneseCountryNames } from "./countries.name.ja";
 
 export interface Country {
+  capital: string;
   code: string;
   latitude: number;
   longitude: number;
   name: string;
 }
 
-export const countriesWithImage = countries.filter((c) =>
-  countryCodesWithImage.includes(c.code.toLowerCase())
-);
-
-export const smallCountryLimit = 5000;
-export const bigEnoughCountriesWithImage = countriesWithImage.filter(
-  (country) => areas[country.code] > smallCountryLimit
-);
+export const countrySelection = countries;
 
 export function getCountryName(language: string, country: Country) {
   switch (language) {

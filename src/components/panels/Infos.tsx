@@ -136,7 +136,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           Want to support?{" "}
           <a
             className="underline"
-            href="https://www.ko-fi.com/teuteuf"
+            href="https://www.ko-fi.com/juliomalegria"
             target="_blank"
             rel="noopener noreferrer"
           >

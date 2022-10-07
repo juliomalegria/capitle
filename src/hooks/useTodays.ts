@@ -1,26 +1,20 @@
 import { DateTime } from "luxon";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import seedrandom from "seedrandom";
-import {
-  bigEnoughCountriesWithImage,
-  countriesWithImage,
-  Country,
-  smallCountryLimit,
-} from "../domain/countries";
-import { areas } from "../domain/countries.area";
+import { countrySelection, Country } from "../domain/countries";
 import { CountryCode } from "../domain/countries.position";
 import { Guess, loadAllGuesses, saveGuesses } from "../domain/guess";
 
 const forcedCountries: Record<string, CountryCode> = {
   "2022-02-02": "TD",
   "2022-02-03": "PY",
-  "2022-03-21": "HM",
+  "2022-03-21": "HN",
   "2022-03-22": "MC",
   "2022-03-23": "PR",
   "2022-03-24": "MX",
   "2022-03-25": "SE",
   "2022-03-26": "VU",
-  "2022-03-27": "TF",
+  "2022-03-27": "TC",
   "2022-03-28": "AU",
   "2022-03-29": "DE",
   "2022-03-30": "GA",
@@ -109,7 +103,7 @@ const forcedCountries: Record<string, CountryCode> = {
   "2022-06-21": "MN",
   "2022-06-22": "PG",
   "2022-06-23": "SN",
-  "2022-06-24": "AQ",
+  "2022-06-24": "AM",
   "2022-06-25": "GH",
   "2022-06-26": "IS",
   "2022-06-27": "MD",
@@ -132,9 +126,7 @@ export function useTodays(dayString: string): [
     country?: Country;
     guesses: Guess[];
   },
-  (guess: Guess) => void,
-  number,
-  number
+  (guess: Guess) => void
 ] {
   const [todays, setTodays] = useState<{
     country?: Country;
@@ -162,45 +154,24 @@ export function useTodays(dayString: string): [
     setTodays({ country, guesses });
   }, [dayString]);
 
-  const randomAngle = useMemo(
-    () => seedrandom.alea(dayString)() * 360,
-    [dayString]
-  );
-
-  const imageScale = useMemo(() => {
-    const normalizedAngle = 45 - (randomAngle % 90);
-    const radianAngle = (normalizedAngle * Math.PI) / 180;
-    return 1 / (Math.cos(radianAngle) * Math.sqrt(2));
-  }, [randomAngle]);
-
-  return [todays, addGuess, randomAngle, imageScale];
+  return [todays, addGuess];
 }
 
 function getCountry(dayString: string) {
   const currentDayDate = DateTime.fromFormat(dayString, "yyyy-MM-dd");
   let pickingDate = DateTime.fromFormat("2022-03-21", "yyyy-MM-dd");
-  let smallCountryCooldown = 0;
   let pickedCountry: Country | null = null;
 
   const lastPickDates: Record<string, DateTime> = {};
 
   do {
-    smallCountryCooldown--;
-
     const pickingDateString = pickingDate.toFormat("yyyy-MM-dd");
 
     const forcedCountryCode = forcedCountries[dayString];
     const forcedCountry =
       forcedCountryCode != null
-        ? countriesWithImage.find(
-            (country) => country.code === forcedCountryCode
-          )
+        ? countrySelection.find((country) => country.code === forcedCountryCode)
         : undefined;
-
-    const countrySelection =
-      smallCountryCooldown < 0
-        ? countriesWithImage
-        : bigEnoughCountriesWithImage;
 
     if (forcedCountry != null) {
       pickedCountry = forcedCountry;
@@ -216,10 +187,6 @@ function getCountry(dayString: string) {
           pickedCountry = countrySelection[countryIndex];
         }
       }
-    }
-
-    if (areas[pickedCountry.code] < smallCountryLimit) {
-      smallCountryCooldown = 7;
     }
 
     lastPickDates[pickedCountry.code] = pickingDate;

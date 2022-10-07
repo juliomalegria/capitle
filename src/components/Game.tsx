@@ -14,7 +14,6 @@ import { Share } from "./Share";
 import { Guesses } from "./Guesses";
 import { useTranslation } from "react-i18next";
 import { SettingsData } from "../hooks/useSettings";
-import { useMode } from "../hooks/useMode";
 import { getDayString, useTodays } from "../hooks/useTodays";
 import { Twemoji } from "@teuteuf/react-emoji-render";
 import { countries } from "../domain/countries.position";
@@ -38,7 +37,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
 
   const countryInputRef = useRef<HTMLInputElement>(null);
 
-  const [todays, addGuess, randomAngle, imageScale] = useTodays(dayString);
+  const [todays, addGuess] = useTodays(dayString);
   const { country, guesses } = todays;
   const countryName = useMemo(
     () => (country ? getCountryName(i18n.resolvedLanguage, country) : ""),
@@ -46,16 +45,6 @@ export function Game({ settingsData, updateSettings }: GameProps) {
   );
 
   const [currentGuess, setCurrentGuess] = useState("");
-  const [hideImageMode, setHideImageMode] = useMode(
-    "hideImageMode",
-    dayString,
-    settingsData.noImageMode
-  );
-  const [rotationMode, setRotationMode] = useMode(
-    "rotationMode",
-    dayString,
-    settingsData.rotationMode
-  );
 
   const gameEnded =
     guesses.length === MAX_TRY_COUNT ||
@@ -126,18 +115,6 @@ export function Game({ settingsData, updateSettings }: GameProps) {
 
   return (
     <div className="flex-grow flex flex-col mx-2">
-      {hideImageMode && !gameEnded && (
-        <button
-          className="font-bold border-2 p-1 rounded uppercase my-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
-          type="button"
-          onClick={() => setHideImageMode(false)}
-        >
-          <Twemoji
-            text={t("showCountry")}
-            options={{ className: "inline-block" }}
-          />
-        </button>
-      )}
       <div className="flex my-1">
         {settingsData.allowShiftingDay && settingsData.shiftDayCount > 0 && (
           <button
@@ -151,20 +128,11 @@ export function Game({ settingsData, updateSettings }: GameProps) {
             <Twemoji text="↪️" className="text-xl" />
           </button>
         )}
-        <img
-          className={`pointer-events-none max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
-            hideImageMode && !gameEnded ? "h-0" : "h-full"
-          }`}
-          alt="country to guess"
-          src={`images/countries/${country?.code.toLowerCase()}/vector.svg`}
-          style={
-            rotationMode && !gameEnded
-              ? {
-                  transform: `rotate(${randomAngle}deg) scale(${imageScale})`,
-                }
-              : {}
-          }
-        />
+        <div className="w-full py-8 px-4">
+          <h2 className="font-semibold text-3xl text-center uppercase">
+            {country?.capital}
+          </h2>
+        </div>
         {settingsData.allowShiftingDay && settingsData.shiftDayCount < 7 && (
           <button
             type="button"
@@ -178,18 +146,6 @@ export function Game({ settingsData, updateSettings }: GameProps) {
           </button>
         )}
       </div>
-      {rotationMode && !hideImageMode && !gameEnded && (
-        <button
-          className="font-bold rounded p-1 border-2 uppercase mb-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
-          type="button"
-          onClick={() => setRotationMode(false)}
-        >
-          <Twemoji
-            text={t("cancelRotation")}
-            options={{ className: "inline-block" }}
-          />
-        </button>
-      )}
       <Guesses
         targetCountry={country}
         rowCount={MAX_TRY_COUNT}
@@ -204,8 +160,6 @@ export function Game({ settingsData, updateSettings }: GameProps) {
               guesses={guesses}
               dayString={dayString}
               settingsData={settingsData}
-              hideImageMode={hideImageMode}
-              rotationMode={rotationMode}
             />
             <div className="flex flex-wrap gap-4 justify-center">
               <a

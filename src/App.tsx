@@ -144,7 +144,7 @@ export default function App() {
             ) : (
               <a
                 className="underline pl-1"
-                href="https://www.ko-fi.com/teuteuf"
+                href="https://www.ko-fi.com/juliomalegria"
                 target="_blank"
                 rel="noopener noreferrer"
               >

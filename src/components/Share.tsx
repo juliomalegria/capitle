@@ -18,17 +18,9 @@ interface ShareProps {
   guesses: Guess[];
   dayString: string;
   settingsData: SettingsData;
-  hideImageMode: boolean;
-  rotationMode: boolean;
 }
 
-export function Share({
-  guesses,
-  dayString,
-  settingsData,
-  hideImageMode,
-  rotationMode,
-}: ShareProps) {
+export function Share({ guesses, dayString, settingsData }: ShareProps) {
   const { t } = useTranslation();
   const { theme } = settingsData;
 
@@ -41,15 +33,10 @@ export function Share({
         "day"
       )
     );
-    const difficultyModifierEmoji = hideImageMode
-      ? " 🙈"
-      : rotationMode
-      ? " 🌀"
-      : "";
     const bestPercent = `(${computeProximityPercent(
       bestDistance
     ).toString()}%)`;
-    const title = `#Capitel #${dayCount} ${guessCount}/6 ${bestPercent}${difficultyModifierEmoji}`;
+    const title = `#Capitel #${dayCount} ${guessCount}/6 ${bestPercent}`;
 
     const guessString = guesses
       .map((guess) => {
@@ -61,7 +48,7 @@ export function Share({
       .join("\n");
 
     return [title, guessString, "https://capitle.juliomalegria.com"].join("\n");
-  }, [dayString, guesses, hideImageMode, rotationMode, theme]);
+  }, [dayString, guesses, theme]);
 
   return (
     <CopyToClipboard

@@ -1,9 +1,6 @@
 import { useCallback, useState } from "react";
 
 export interface SettingsData {
-  showScale: boolean;
-  noImageMode: boolean;
-  rotationMode: boolean;
   distanceUnit: "km" | "miles";
   theme: "light" | "dark";
   shiftDayCount: number;
@@ -12,9 +9,6 @@ export interface SettingsData {
 }
 
 const defaultSettingsData: SettingsData = {
-  showScale: false,
-  noImageMode: false,
-  rotationMode: false,
   distanceUnit: "km",
   theme: window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"

@@ -141,7 +141,7 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
           もっと応援したい？
           <a
             className="underline"
-            href="https://www.ko-fi.com/teuteuf"
+            href="https://www.ko-fi.com/juliomalegria"
             target="_blank"
             rel="noopener noreferrer"
           >
