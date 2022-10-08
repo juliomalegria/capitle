@@ -98,7 +98,7 @@ export function InfosHu({ isOpen, close, settingsData }: InfosProps) {
         -höz <span className="font-bold">jelentős</span> inspirációt adott a{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >

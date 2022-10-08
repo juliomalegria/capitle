@@ -103,7 +103,7 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
         créé par{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >

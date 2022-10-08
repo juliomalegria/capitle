@@ -101,7 +101,7 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
         von{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >

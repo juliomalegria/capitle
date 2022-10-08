@@ -101,7 +101,7 @@ export function InfosNl({ isOpen, close, settingsData }: InfosProps) {
         , gemaakt door{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >

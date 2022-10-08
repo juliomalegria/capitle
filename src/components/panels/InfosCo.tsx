@@ -106,7 +106,7 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
         creatu da{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >
