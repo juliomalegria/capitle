@@ -12,7 +12,7 @@ import { InfosPl } from "./components/panels/InfosPl";
 import { InfosDe } from "./components/panels/InfosDe";
 import { Settings } from "./components/panels/Settings";
 import { useSettings } from "./hooks/useSettings";
-import { Capitel } from "./components/Capitel";
+import { Capitle } from "./components/Capitle";
 import { Stats } from "./components/panels/Stats";
 import { Twemoji } from "@teuteuf/react-emoji-render";
 import { getDayString, useTodays } from "./hooks/useTodays";
@@ -131,7 +131,7 @@ export default function App() {
               text="❤️"
               className="flex items-center justify-center mr-1"
             />{" "}
-            <Capitel />? -
+            <Capitle />? -
             {country && supportLink[country.code] != null ? (
               <a
                 className="underline pl-1"

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Capitel() {
+export function Capitle() {
   return (
     <span className="font-bold">
       CAPIT<span className="text-green-600">L</span>E

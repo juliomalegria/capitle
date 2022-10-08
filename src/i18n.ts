@@ -31,9 +31,9 @@ export const translations = {
         guessDistribution: "Guess distribution:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "App Install:",
-        description: "Add Capitel to Home Screen to play it easily!",
+        description: "Add Capitle to Home Screen to play it easily!",
         instructionTitle: "Instructions:",
         instructionActionOk: "OK",
         instructionActionCancel: "Cancel",
@@ -90,10 +90,10 @@ export const translations = {
         guessDistribution: "Répartitions des victoires:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "Installer l'app:",
         description:
-          "Ajouter Capitel sur l'écran d'accueil pour le retrouver plus facilement !",
+          "Ajouter Capitle sur l'écran d'accueil pour le retrouver plus facilement !",
         instructionTitle: "Instructions :",
         instructionActionOk: "OK",
         instructionActionCancel: "Annuler",
@@ -200,10 +200,10 @@ export const translations = {
         guessDistribution: "Találatok eloszlása:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "App Letöltése:",
         description:
-          "Add hozzá a Capitel a Kezdőképernyőhöz, hogy egyszerűbben játszhass!",
+          "Add hozzá a Capitle a Kezdőképernyőhöz, hogy egyszerűbben játszhass!",
         instructionTitle: "In",
         instructionActionOk: "OK",
         instructionActionCancel: "Mégse",
@@ -251,10 +251,10 @@ export const translations = {
         guessDistribution: "Kansverspreiding:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "Appinstallatie:",
         description:
-          "Voeg Capitel toe aan je beginscherm om het makkelijk te spelen!",
+          "Voeg Capitle toe aan je beginscherm om het makkelijk te spelen!",
         instructionTitle: "Instructies:",
         instructionActionOk: "OK",
         instructionActionCancel: "Annuleer",
@@ -304,9 +304,9 @@ export const translations = {
         guessDistribution: "Podział odgadnięć:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "Instalacja:",
-        description: "Dodaj Capitel do ekranu głównego żeby grać łatwiej!",
+        description: "Dodaj Capitle do ekranu głównego żeby grać łatwiej!",
         instructionTitle: "Instrukcja:",
         instructionActionOk: "OK",
         instructionActionCancel: "Anuluj",
@@ -362,10 +362,10 @@ export const translations = {
         guessDistribution: "Distribuição de palpites:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "Instalar App:",
         description:
-          "Adicione Capitel a sua página inicial para jogar mais facilmente!",
+          "Adicione Capitle a sua página inicial para jogar mais facilmente!",
         instructionTitle: "Instruções:",
         instructionActionOk: "OK",
         instructionActionCancel: "Cancelar",
@@ -421,10 +421,10 @@ export const translations = {
         guessDistribution: "Verteilung der Versuche:",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "App Installieren:",
         description:
-          "Capitel zum Startbildschirm hinzufügen um einfacher zu spielen!",
+          "Capitle zum Startbildschirm hinzufügen um einfacher zu spielen!",
         instructionTitle: "Anleitung:",
         instructionActionOk: "OK",
         instructionActionCancel: "Abbrechen",
@@ -480,9 +480,9 @@ export const translations = {
         guessDistribution: "的中までの回答数",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "アプリをインストール",
-        description: "ホーム画面にCapitelを追加してプレイしやすくしましょう！",
+        description: "ホーム画面にCapitleを追加してプレイしやすくしましょう！",
         instructionTitle: "やり方",
         instructionActionOk: "OK",
         instructionActionCancel: "キャンセル",
@@ -539,10 +539,10 @@ export const translations = {
         guessDistribution: "Classificazione di e vittorie",
       },
       install: {
-        title: "Capitel",
+        title: "Capitle",
         descritpionTitle: "Installà l’appiecazione :",
         description:
-          "Aghjunghje Capitel à u screnu d’accolta per ghjucà più prestu !",
+          "Aghjunghje Capitle à u screnu d’accolta per ghjucà più prestu !",
         instructionTitle: "Istruzzioni :",
         instructionActionOk: "Vai",
         instructionActionCancel: "Abbandunà",

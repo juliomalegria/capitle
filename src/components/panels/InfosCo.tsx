@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Capitel } from "../Capitel";
+import { Capitle } from "../Capitle";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -18,7 +18,7 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
           {" "}
-          Induvinate u <Capitel /> in 6 colpi.
+          Induvinate u <Capitle /> in 6 colpi.
         </div>
         <div>
           Ogni colpu deve esse u nome accettevule d’un paese o d’un territoriu.
@@ -90,10 +90,10 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Un novu <Capitel /> hè dispunibule ogni ghjornu !
+        Un novu <Capitle /> hè dispunibule ogni ghjornu !
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Capitel /> hè statu inspiratu{" "}
+        <Capitle /> hè statu inspiratu{" "}
         <span className="font-bold">forte forte</span> da{" "}
         <a
           className="underline"
@@ -128,7 +128,7 @@ export function InfosCo({ isOpen, close, settingsData }: InfosProps) {
           - (
           <a
             className="underline"
-            href="https://github.com/juliomalegria/capitel/"
+            href="https://github.com/juliomalegria/capitle/"
             target="_blank"
             rel="noopener noreferrer"
           >

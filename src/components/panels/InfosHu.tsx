@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Capitel } from "../Capitel";
+import { Capitle } from "../Capitle";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -18,7 +18,7 @@ export function InfosHu({ isOpen, close, settingsData }: InfosProps) {
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
           {" "}
-          Találd ki a napi <Capitel />
+          Találd ki a napi <Capitle />
           -t 6 próbálkozásból.
         </div>
         <div>
@@ -91,10 +91,10 @@ export function InfosHu({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Minden nap új <Capitel /> érhető el!
+        Minden nap új <Capitle /> érhető el!
       </div>
       <div className="space-y-3 border-b-2 border-gray-200 pb-3 mb-3">
-        <Capitel />
+        <Capitle />
         -höz <span className="font-bold">jelentős</span> inspirációt adott a{" "}
         <a
           className="underline"
@@ -129,7 +129,7 @@ export function InfosHu({ isOpen, close, settingsData }: InfosProps) {
           - (
           <a
             className="underline"
-            href="https://github.com/juliomalegria/capitel/"
+            href="https://github.com/juliomalegria/capitle/"
             target="_blank"
             rel="noopener noreferrer"
           >

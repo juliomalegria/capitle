@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Capitel } from "../Capitel";
+import { Capitle } from "../Capitle";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -17,7 +17,7 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
     <Panel title="Wie wird gespielt?" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
-          Errate das <Capitel /> in 6 Versuchen.
+          Errate das <Capitle /> in 6 Versuchen.
         </div>
         <div>Jeder Versuch muss ein gültiges Land, Territorium, ... sein</div>
         <div>
@@ -86,10 +86,10 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Jeden Tag wird ein neues <Capitel /> verfügbar sein!
+        Jeden Tag wird ein neues <Capitle /> verfügbar sein!
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Capitel /> wurde <span className="font-bold">stark</span> von{" "}
+        <Capitle /> wurde <span className="font-bold">stark</span> von{" "}
         <a
           className="underline"
           href="https://worldle.teuteuf.fr/"
@@ -123,7 +123,7 @@ export function InfosDe({ isOpen, close, settingsData }: InfosProps) {
           - (
           <a
             className="underline"
-            href="https://github.com/juliomalegria/capitel/"
+            href="https://github.com/juliomalegria/capitle/"
             target="_blank"
             rel="noopener noreferrer"
           >

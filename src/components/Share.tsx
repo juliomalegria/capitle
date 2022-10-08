@@ -36,7 +36,7 @@ export function Share({ guesses, dayString, settingsData }: ShareProps) {
     const bestPercent = `(${computeProximityPercent(
       bestDistance
     ).toString()}%)`;
-    const title = `#Capitel #${dayCount} ${guessCount}/6 ${bestPercent}`;
+    const title = `#Capitle #${dayCount} ${guessCount}/6 ${bestPercent}`;
 
     const guessString = guesses
       .map((guess) => {

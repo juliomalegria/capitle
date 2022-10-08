@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Capitel } from "../Capitel";
+import { Capitle } from "../Capitle";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -17,7 +17,7 @@ export function InfosPl({ isOpen, close, settingsData }: InfosProps) {
     <Panel title="Zasady gry" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
-          Odgadnij <Capitel /> w 6. próbach.
+          Odgadnij <Capitle /> w 6. próbach.
         </div>
         <div>
           W każdej próbie odgadnięcia musisz podać istniejący kraj, terytorium,
@@ -89,10 +89,10 @@ export function InfosPl({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        Nowe <Capitel /> będzie pojawiać się każdego dnia!
+        Nowe <Capitle /> będzie pojawiać się każdego dnia!
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Capitel /> wzoruje się w <span className="font-bold">dużej</span>{" "}
+        <Capitle /> wzoruje się w <span className="font-bold">dużej</span>{" "}
         mierze na{" "}
         <a
           className="underline"
@@ -127,7 +127,7 @@ export function InfosPl({ isOpen, close, settingsData }: InfosProps) {
           - (
           <a
             className="underline"
-            href="https://github.com/juliomalegria/capitel/"
+            href="https://github.com/juliomalegria/capitle/"
             target="_blank"
             rel="noopener noreferrer"
           >

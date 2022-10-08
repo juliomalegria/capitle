@@ -1,7 +1,7 @@
 import { Guesses } from "../Guesses";
 import { Panel } from "./Panel";
 import React from "react";
-import { Capitel } from "../Capitel";
+import { Capitle } from "../Capitle";
 import { formatDistance } from "../../domain/geography";
 import { SettingsData } from "../../hooks/useSettings";
 import { Twemoji } from "@teuteuf/react-emoji-render";
@@ -18,7 +18,7 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
           6回以内の回答で
-          <Capitel />
+          <Capitle />
           に正解しましょう。
         </div>
         <div>正確な国名・地域名で回答してください。</div>
@@ -89,11 +89,11 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
         毎日新しい
-        <Capitel />
+        <Capitle />
         を楽しむことができます！
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Capitel />
+        <Capitle />
         は、
         <a
           className="underline"
@@ -129,7 +129,7 @@ export function InfosJa({ isOpen, close, settingsData }: InfosProps) {
           - (
           <a
             className="underline"
-            href="https://github.com/juliomalegria/capitel/"
+            href="https://github.com/juliomalegria/capitle/"
             target="_blank"
             rel="noopener noreferrer"
           >
