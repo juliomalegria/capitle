@@ -165,7 +165,7 @@ function getCountry(dayString: string) {
   const lastPickDates: Record<string, DateTime> = {};
 
   do {
-    const pickingDateString = pickingDate.toFormat("yyyy-MM-dd");
+    const randomSeed = "capitle" + pickingDate.toFormat("yyyy-MM-dd");
 
     const forcedCountryCode = forcedCountries[dayString];
     const forcedCountry =
@@ -177,7 +177,7 @@ function getCountry(dayString: string) {
       pickedCountry = forcedCountry;
     } else {
       let countryIndex = Math.floor(
-        seedrandom.alea(pickingDateString)() * countrySelection.length
+        seedrandom.alea(randomSeed)() * countrySelection.length
       );
       pickedCountry = countrySelection[countryIndex];
 
